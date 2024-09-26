@@ -11,9 +11,9 @@ class ContactInput extends React.Component{
             tag: '',
         }
 
-        this.onNameChangeEventHandler = this.onNameChangeEventHandler.bind('this');
-        this.onTagChangeEventHandler = this.onTagChangeEventHandler.bind('this');
-        this.submitEventHandler = this.submitEventHandler.bind('this');
+        this.onNameChangeEventHandler = this.onNameChangeEventHandler.bind(this);
+        this.onTagChangeEventHandler = this.onTagChangeEventHandler.bind(this);
+        this.onSubmitEventHandler = this.onSubmitEventHandler.bind(this);
     }
 
         onNameChangeEventHandler(event){
