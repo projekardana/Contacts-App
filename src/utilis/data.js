@@ -4,19 +4,19 @@ const getData = () => {
             id: 1,
             name: 'Muhammad Dendi Ardana',
             tag: 'mdendiardana',
-            imageUrl: 'images/mdendiardana.jpg',
+            imageUrl: '/public/images/mdendiardana.jpg',
         },
         {
             id: 2,
             name: 'Arif Faizin',
             tag: 'arifaizin',
-            imageUrl: 'images/arifaizin.jpeg',
+            imageUrl: '/public/images/arifaizin.jpeg',
         },
         {
             id: 3,
             name: 'Rahmat Fajri',
             tag: 'rfajri27',
-            imageUrl: '/images/rfajri27.jpeg'
+            imageUrl: '/public/images/rfajri27.jpeg'
         },
     ];
 }

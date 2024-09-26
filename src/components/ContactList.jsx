@@ -8,7 +8,7 @@ function ContactList({contacts, onDelete}){
                 contacts.map((contact) => (
                     <ContactItem 
                     key={contact.id}
-                    id={contact_id}
+                    id={contact.id}
                     onDelete={onDelete}
                     {...contact} />
                 ))
