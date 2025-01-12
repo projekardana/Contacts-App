@@ -1,5 +1,4 @@
-const getData = () => {
-    return [
+let contacts = [
         {
             id: 1,
             name: 'Muhammad Dendi Ardana',
@@ -18,7 +17,18 @@ const getData = () => {
             tag: 'rfajri27',
             imageUrl: '/public/images/rfajri27.jpeg'
         },
-    ];
-}
+    ]
 
-export {getData};
+    function getContacts() {
+        return contacts;
+    }
+
+    function addContact(contact) {
+        contacts = [...contacts, { id: +new Date(), imageUrl: '/public/images/default.jpg', ...contact }];
+    }
+
+    function deleteContact(id) {
+        contacts = contacts.filter((contact) => contact.id !== id);
+    }
+
+export { getContacts, addContact, deleteContact };
